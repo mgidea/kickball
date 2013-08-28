@@ -81,8 +81,9 @@ response = gets.chomp
   end
 end
 
-
-
+victors.each_with_index do |winner, game|
+  puts "In game #{game + 1}, #{winner} is the victor!"
+end
 
 
 # phase 2 pseudo code
