@@ -82,7 +82,11 @@ response = gets.chomp
 end
 
 victors.each_with_index do |winner, game|
+  game_scores.each do |score|
+  puts "the score in #{game + 1} was #{score}."
   puts "In game #{game + 1}, #{winner} is the victor!"
+
+  end
 end
 
 
