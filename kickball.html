@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<head>
+  <title>Super-Awesome Kickball</title>
+  <style >
+  body  {
+    width: 1000px;
+    margin: auto;
+    background-color: #add8e6;
+  }
+
+  .kick p {
+    font-size: 4em;
+    color: #2b2e22;
+    text-align: center;
+    margin-top: 15px;
+
+  }
+  .working-program {
+  background-color: #e9eae8;
+  font-family: sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 35px;
+  }
+
+  .working-program em {
+    font-weight: bold;
+  }
+
+  .working-program ul {
+    background-color: #747574;
+  }
+  .added-features {
+    background-color: #c2c3c2;
+    margin: 0;
+  }
+  .the-final-countdown {
+    background-color:
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .plast {
+    padding-top: 15px;
+  }
+  </style>
+
+</head>
+<body>
+  <header class="kick">
+    <p>Let's Get Our Kick-on</p>
+  </header>
+  <div class="working-program">
+    <p>
+      What is the point of playing competitive kickball if you do not keep track of the winning team?
+      I have created a <em>Ruby</em> program that collects the scores of each individual match and then reports who was the eventual winner.
+    </p>
+    <p>
+      The score for each game is recorded through a series of prompts.  The data entry worker supplies the
+      names of both teams and the final scores from the game.  The program then invokes a method to report the winner and report who that winner is.
+    </p>
+    <p>
+        Many times there is more than one game that has taken place, so the program will ask whether the reporter wants to record any more games.  The reporter is asked the same series of questions that requires the fill in the same fields of data.  This process will continue until there are no games left to record.  If the reporter responds "n" to the question "Would you like to provide another game? (Y/N)", the programs responds by printing out line by line the game number along with the corresponding winner.  Here is a simulated example of output:
+      <ul>
+        <li>In game 1, the <span>Bangers</span> were the victors!</li>
+        <li>In game 2, the <span>Bananas</span> were the victors!</li>
+        <li>In game 3, the <span>Haters</span> were the victors!</li>
+        <li>In game 4, the <span>Bangers</span> were the victors!</li>
+      </ul>
+    </p>
+  </div>
+  <div class="added-features">
+    <p>
+      This was a time constrained project, but there are a number of features that can be added.  While
+      my program works the way it should I would like to add some aspects that make it neater and more informative.  Here are my thoughts:
+      <ol>
+        <li><h4>Collapse the series of prompted questions into a method</h4></li>
+          <ul>
+            <li>
+              I could not figure out how to reassign the variable name each time a new game was created.
+              This should be easy enough to work through, but I wanted to submit a working program before I worried about secondary issues.
+            </li>
+          </ul>
+        <li><h4>Create validators on data input</h4></li>
+          <ul>
+            <li>
+              Scores must be integers
+            </li>
+            <li>Response to yes or no question must be y/n </li>
+          </ul>
+
+        <li><h4>Produce more data in the final report</h4></li>
+          <ul>
+            <li>
+              Add the final score for each game
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </p>
+  </div>
+  <div class= "the-final-countdown">
+    <p>
+      I hope you enjoy the use of this program.  It should make kickball that much more fun.  And remember "there is no crying in kickball"
+    </p>
+    <p class= "plast">
+      Given more time, this would have looked a lot better...but at least it is semantic
+    </p>
+  </div>
+
+</body>
+
